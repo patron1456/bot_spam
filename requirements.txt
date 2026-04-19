@@ -1,2 +1,8 @@
 flask
 gunicorn
+requests
+psutil
+pyjwt
+protobuf
+protobuf-decoder
+pycryptodome
