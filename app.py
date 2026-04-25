@@ -204,26 +204,6 @@ def get_accounts():
 
 @app.route('/')
 def home():
-
-    @app.route('/login', methods=['POST'])
-def login():
-    data = request.json
-
-    username = data.get("username")
-    password = data.get("password")
-
-    # حساب تجريبي
-    if username == "admin" and password == "1234":
-        return jsonify({
-            "status": "success",
-            "message": "login successful",
-            "token": "123456"
-        })
-
-    return jsonify({
-        "status": "error",
-        "message": "wrong username or password"
-    })
     
     return """
     <h1> نظام إدارة السبام (الإصدار المحدث)</h1>
